@@ -70,6 +70,8 @@ C:\samtools\htslib-1.3.1\tabix -p vcf IBDallSamples_chrY_nt20.hc.vcf.bgz
 
 C:\samtools\htslib-1.3.1\tabix -p vcf IBDallSamples_chr1_nt20.hc.vcf.bgz -H > test.txt
 
+C:\samtools\htslib-1.3.1\tabix -p vcf output.vcf.bgz -H > test.txt
+
 
 java -Xmx62g -cp C:\GATK\GenomeAnalysisTK-3.7\GenomeAnalysisTK.jar org.broadinstitute.gatk.tools.CatVariants -R E:\GRCH38REF\Homo_sapiens.GRCh38.norm.fa -V VCFList.list -out output.vcf.bgz
 
@@ -86,15 +88,18 @@ java -Xmx62g -jar C:\picard\picard.jar NormalizeFasta INPUT=Homo_sapiens.GRCh38.
 
 awk 'BEGIN {RS = ">" ; FS = "\n" ; ORS = ""} {if ($2) print ">"$0}' Homo_sapiens.GRCh38.norm.fa > Homo_sapiens.GRCh38.norm.nl.fa
 
-sed '/^$/d' Homo_sapiens.GRCh38.norm.nl.fa > Homo_sapiens.GRCh38.norm.nl.sed.fa 
+sed '/^$/d' Homo_sapiens.GRCh38.norm.nl.fa > Homo_sapiens.GRCh38.norm.nl.sed.fa
 
 Homo_sapiens.GRCh38.norm.nl.fa\
 
 C:\seqkit\seqkit seq -w 70 Homo_sapiens.GRCh38.fa > s2.fa
 
-C:\seqkit\seqkit faidx s2.fa 
+C:\seqkit\seqkit faidx s2.fa
 
 java -Xmx62g -cp C:\GATK\GenomeAnalysisTK-3.7\GenomeAnalysisTK.jar org.broadinstitute.gatk.tools.CatVariants -R E:\GRCH38REF\s2.fa -V VCFList.list -out output.vcf.bgz
+
+java -Xmx62g -cp C:\GATK\GenomeAnalysisTK-3.7\GenomeAnalysisTK.jar org.broadinstitute.gatk.tools.CatVariants -R E:\GRCH38REF\s2.fa -V VCFList.list -out Z:\RegeneronMaster\output.vcf.bgz
+
 
 
 java -Xmx62g -jar C:\picard\picard.jar CreateSequenceDictionary R=s2.fa OUTPUT=s2.dict
