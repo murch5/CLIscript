@@ -1,7 +1,0 @@
-export PERL5LIB=/cygdrive/c/vcftools/perl/
-
-perl /cygdrive/c/vcftools/perl/vcf-merge $(ls -1 *.vcf.gz | perl -pe 's/\n/ /g') >merge.vcf
-
-perl ls *vcf.gz | xargs vcf-merge > merged.vcf
-
-perl glob("*vcf.gz")
