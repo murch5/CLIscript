@@ -1,0 +1,1 @@
+sed '/^$/d' Homo_sapiens.GRCh38.norm.nl.fa > Homo_sapiens.GRCh38.norm.nl.sed.fa

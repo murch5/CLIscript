@@ -1,0 +1,1 @@
+awk 'BEGIN {RS = ">" ; FS = "\n" ; ORS = ""} {if ($2) print ">"$0}' Homo_sapiens.GRCh38.norm.fa > Homo_sapiens.GRCh38.norm.nl.fa

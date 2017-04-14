@@ -1,0 +1,38 @@
+C:\samtools\samtools faidx Homo_sapiens.GRCh38.norm.fa
+C:\samtools\samtools faidx s2.fa
+
+
+C:\samtools\samtools faidx genome.fa
+
+
+C:\samtools\htslib-1.3.1\tabix -p vcf IBDallSamples_chr1_nt20.hc.vcf.bgz
+
+C:\samtools\htslib-1.3.1\tabix -p vcf IBDallSamples_chr2_nt20.hc.vcf.bgz
+C:\samtools\htslib-1.3.1\tabix -p vcf IBDallSamples_chr3_nt20.hc.vcf.bgz
+C:\samtools\htslib-1.3.1\tabix -p vcf IBDallSamples_chr4_nt20.hc.vcf.bgz
+C:\samtools\htslib-1.3.1\tabix -p vcf IBDallSamples_chr5_nt20.hc.vcf.bgz
+C:\samtools\htslib-1.3.1\tabix -p vcf IBDallSamples_chr6_nt20.hc.vcf.bgz
+C:\samtools\htslib-1.3.1\tabix -p vcf IBDallSamples_chr7_nt20.hc.vcf.bgz
+C:\samtools\htslib-1.3.1\tabix -p vcf IBDallSamples_chr8_nt20.hc.vcf.bgz
+C:\samtools\htslib-1.3.1\tabix -p vcf IBDallSamples_chr9_nt20.hc.vcf.bgz
+
+C:\samtools\htslib-1.3.1\tabix -p vcf IBDallSamples_chr10_nt20.hc.vcf.bgz
+C:\samtools\htslib-1.3.1\tabix -p vcf IBDallSamples_chr11_nt20.hc.vcf.bgz
+C:\samtools\htslib-1.3.1\tabix -p vcf IBDallSamples_chr12_nt20.hc.vcf.bgz
+C:\samtools\htslib-1.3.1\tabix -p vcf IBDallSamples_chr13_nt20.hc.vcf.bgz
+C:\samtools\htslib-1.3.1\tabix -p vcf IBDallSamples_chr14_nt20.hc.vcf.bgz
+C:\samtools\htslib-1.3.1\tabix -p vcf IBDallSamples_chr15_nt20.hc.vcf.bgz
+C:\samtools\htslib-1.3.1\tabix -p vcf IBDallSamples_chr16_nt20.hc.vcf.bgz
+C:\samtools\htslib-1.3.1\tabix -p vcf IBDallSamples_chr17_nt20.hc.vcf.bgz
+C:\samtools\htslib-1.3.1\tabix -p vcf IBDallSamples_chr18_nt20.hc.vcf.bgz
+C:\samtools\htslib-1.3.1\tabix -p vcf IBDallSamples_chr19_nt20.hc.vcf.bgz
+C:\samtools\htslib-1.3.1\tabix -p vcf IBDallSamples_chr20_nt20.hc.vcf.bgz
+C:\samtools\htslib-1.3.1\tabix -p vcf IBDallSamples_chr21_nt20.hc.vcf.bgz
+C:\samtools\htslib-1.3.1\tabix -p vcf IBDallSamples_chr22_nt20.hc.vcf.bgz
+C:\samtools\htslib-1.3.1\tabix -p vcf IBDallSamples_chrM_nt20.hc.vcf.bgz
+C:\samtools\htslib-1.3.1\tabix -p vcf IBDallSamples_chrX_nt20.hc.vcf.bgz
+C:\samtools\htslib-1.3.1\tabix -p vcf IBDallSamples_chrY_nt20.hc.vcf.bgz
+
+C:\samtools\htslib-1.3.1\tabix -p vcf IBDallSamples_chr1_nt20.hc.vcf.bgz -H > test.txt
+
+C:\samtools\htslib-1.3.1\tabix -p vcf output.vcf.bgz -H > test.txt
