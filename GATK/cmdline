@@ -17,16 +17,11 @@ java -Xmx55g -jar C:\GATK\GenomeAnalysisTK-3.7\GenomeAnalysisTK.jar -T GenotypeG
 
 java -Xmx62g -jar C:\GATK\GenomeAnalysisTK-3.7\GenomeAnalysisTK.jar -T CombineVariants -R E:\GRCH38REF\genome.fa -V Cohort1.vcf.gz -V Cohort2.vcf.gz -o masterVCF.vcf.gz -genotypeMergeOptions UNIQUIFY
 
-
-
 java -Xmx62g -jar C:\GATK\GenomeAnalysisTK-3.7\GenomeAnalysisTK.jar -T CombineVariants -R E:\GRCH38REF\genome.fa -V Cohort1.vcf.gz -V Cohort2.vcf.gz -o masterVCF.vcf.gz -genotypeMergeOptions UNIQUIFY
-
 
 java -Xmx62g -cp C:\GATK\GenomeAnalysisTK-3.7\GenomeAnalysisTK.jar org.broadinstitute.gatk.tools.CatVariants -R E:\GRCH38REF\genome.fa -V VCFList.list -out output.vcf.bgz
 
-
 java -Xmx62g -cp C:\GATK\GenomeAnalysisTK-3.7\GenomeAnalysisTK.jar org.broadinstitute.gatk.tools.CatVariants -R E:\GRCH38REF\genome.fa -V IBDallSamples_chr1_nt20.hc.vcf.bgz -V IBDallSamples_chr2_nt20.hc.vcf.bgz -out output.vcf.bgz
-
 
 java -Xmx62g -jar C:\GATK\GenomeAnalysisTK-3.7\GenomeAnalysisTK.jar -T ValidateVariants -R E:\GRCH38REF\genome.fa -V IBDallSamples_chr1_nt20.hc.vcf.bgz --validationTypeToExclude ALL
 
@@ -34,21 +29,16 @@ java -Xmx62g -jar C:\GATK\GenomeAnalysisTK-3.7\GenomeAnalysisTK.jar -T ValidateV
 
 java -Xmx62g -cp C:\GATK\GenomeAnalysisTK-3.7\GenomeAnalysisTK.jar org.broadinstitute.gatk.tools.CatVariants -R E:\GRCH38REF\Homo_sapiens.GRCh38.norm.fa -V VCFList.list -out output.vcf.bgz
 
-
 java -Xmx62g -cp C:\GATK\GenomeAnalysisTK-3.7\GenomeAnalysisTK.jar org.broadinstitute.gatk.tools.CatVariants -R E:\GRCH38REF\Homo_sapiens.GRCh38.fa -V IBDallSamples_chr1_nt20.hc.vcf.bgz -V IBDallSamples_chr2_nt20.hc.vcf.bgz -out output.vcf.bgz
-
 
 java -Xmx62g -jar C:\GATK\GenomeAnalysisTK-3.7\GenomeAnalysisTK.jar -T ValidateVariants -R E:\GRCH38REF\genome.fa -V IBDallSamples_chr1_nt20.hc.vcf.bgz --validationTypeToExclude ALL
 
 java -Xmx62g -jar C:\GATK\GenomeAnalysisTK-3.7\GenomeAnalysisTK.jar -T ValidateVariants -R E:\GRCH38REF\genome.fa -V IBDallSamples_chr17_nt20.hc.vcf.bgz --validationTypeToExclude ALL
-
 
 java -Xmx62g -jar C:\picard\picard.jar NormalizeFasta INPUT=Homo_sapiens.GRCh38.fa OUTPUT=Homo_sapiens.GRCh38.norm.fa LINE_LENGTH=70
 
 java -Xmx62g -cp C:\GATK\GenomeAnalysisTK-3.7\GenomeAnalysisTK.jar org.broadinstitute.gatk.tools.CatVariants -R E:\GRCH38REF\s2.fa -V VCFList.list -out output.vcf.bgz
 
 java -Xmx62g -cp C:\GATK\GenomeAnalysisTK-3.7\GenomeAnalysisTK.jar org.broadinstitute.gatk.tools.CatVariants -R E:\GRCH38REF\s2.fa -V VCFList.list -out Z:\RegeneronMaster\output.vcf.bgz
-
-
 
 java -Xmx62g -jar C:\picard\picard.jar CreateSequenceDictionary R=s2.fa OUTPUT=s2.dict

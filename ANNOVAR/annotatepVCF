@@ -1,0 +1,8 @@
+#Load human DB for annotation
+
+perl table_annovar.pl -buildver hg19 -downdb -webfrom annovar refGene humandb/
+
+
+#list databases available through ANNOVAR
+
+perl C:\Util\annovar\annotate_variation.pl --buildver hg38 --webfrom annovar --downdb avdblist humandb/

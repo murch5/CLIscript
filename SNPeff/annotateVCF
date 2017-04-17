@@ -1,0 +1,3 @@
+
+
+java -Xmx62g -jar C:\Util\snpEff_latest_core\snpEff\snpEff.jar  databases > SNPeffDbList
