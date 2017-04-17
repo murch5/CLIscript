@@ -6,3 +6,29 @@ perl table_annovar.pl -buildver hg19 -downdb -webfrom annovar refGene humandb/
 #list databases available through ANNOVAR
 
 perl C:\Util\annovar\annotate_variation.pl --buildver hg38 --webfrom annovar --downdb avdblist humandb/
+
+
+
+
+ avdblist humandb/
+
+
+perl Z:\annovar\annotate_variation.pl --buildver hg38 --webfrom annovar --downdb avsnp147 humandb/
+perl Z:\annovar\annotate_variation.pl --buildver hg38 --webfrom annovar --downdb clinvar_20170130 humandb/
+perl Z:\annovar\annotate_variation.pl --buildver hg38 --webfrom annovar --downdb cosmic70 humandb/
+perl Z:\annovar\annotate_variation.pl --buildver hg38 --webfrom annovar --downdb dbsfp33a humandb/
+perl Z:\annovar\annotate_variation.pl --buildver hg38 --webfrom annovar --downdb dbscsnv11 humandb/
+perl Z:\annovar\annotate_variation.pl --buildver hg38 --webfrom annovar --downdb esp6500siv2_all humandb/
+perl Z:\annovar\annotate_variation.pl --buildver hg38 --webfrom annovar --downdb gme humandb/
+
+perl Z:\annovar\annotate_variation.pl --buildver hg38 --webfrom annovar --downdb gnomad_exome humandb/
+perl Z:\annovar\annotate_variation.pl --buildver hg38 --webfrom annovar --downdb hrcr1 humandb/
+perl Z:\annovar\annotate_variation.pl --buildver hg38 --webfrom annovar --downdb kaviar_20150923 humandb/
+perl Z:\annovar\annotate_variation.pl --buildver hg38 --webfrom annovar --downdb ljb26_all humandb/
+perl Z:\annovar\annotate_variation.pl --buildver hg38 --webfrom annovar --downdb mcap humandb/
+perl Z:\annovar\annotate_variation.pl --buildver hg38 --webfrom annovar --downdb nci60 humandb/
+perl Z:\annovar\annotate_variation.pl --buildver hg38 --webfrom annovar --downdb refGene humandb/
+perl Z:\annovar\annotate_variation.pl --buildver hg38 --webfrom annovar --downdb revel humandb/
+perl Z:\annovar\annotate_variation.pl --buildver hg38 --webfrom annovar --downdb 1000g2015aug humandb/
+perl Z:\annovar\annotate_variation.pl --buildver hg38 --webfrom annovar --downdb tmcsnpdb humandb/
+perl Z:\annovar\annotate_variation.pl --buildver hg38 --webfrom annovar --downdb exac03 humandb/
