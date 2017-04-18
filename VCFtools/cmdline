@@ -1,0 +1,1 @@
+C:\vcftools\bin\vcftools --bcf output.vcf.bgz --stdout | gzip -c > output_PASS_only.vcf.gz
