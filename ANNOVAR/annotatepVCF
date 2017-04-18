@@ -32,3 +32,11 @@ perl Z:\annovar\annotate_variation.pl --buildver hg38 --webfrom annovar --downdb
 perl Z:\annovar\annotate_variation.pl --buildver hg38 --webfrom annovar --downdb 1000g2015aug humandb/
 perl Z:\annovar\annotate_variation.pl --buildver hg38 --webfrom annovar --downdb tmcsnpdb humandb/
 perl Z:\annovar\annotate_variation.pl --buildver hg38 --webfrom annovar --downdb exac03 humandb/
+
+
+perl Z:\annovar\annotate_variation.pl --buildver hg38 --webfrom annovar --downdb exac03 humandb/
+
+
+perl table_annovar.pl Z:/RegeneronMaster/output.vcf.bgz C:\Users\Ryan\humandb --buildver hg38 --out annotation --remove --protocol refGene --operation g --nastring . --vcfinput
+
+cat Z:/RegeneronMaster/output.vcf.bgz
