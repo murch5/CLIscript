@@ -17,3 +17,8 @@ C:\bcftools-1.4\bcftools query --output r.txt --print-header IBDallSamples_chr1_
 C:\bcftools-1.4\bcftools query -f %TAG IBDallSamples_chr1_nt20.hc.vcf.bgz > read.txt
 
 C:\bcftools-1.4\bcftools reheader IBDallSamples_chr1_nt20.hc.vcf.bgz > tmp
+
+#Convert to BCF --> VCF
+C:\bcftools-1.4\bcftools view output.vcf.bgz -o outputVCF.vcf.gz
+
+C:\bcftools-1.4\bcftools view outputVCF.vcf.gz
