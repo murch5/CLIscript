@@ -1,0 +1,7 @@
+java -jar C:\cramtools-3.0\cramtools-3.0.jar 1674046.cram
+
+java -jar  C:\cramtools-3.0\cramtools-3.0.jar bam --input-cram-file 1674046.cram --reference-fasta-file hg19.fa --output-bam-file 1674046.bam
+
+C:\Users\Ryan\Desktop\CRAM
+
+java -jar  C:\cramtools-3.0\cramtools-3.0.jar bam --input-cram-file 1674046.cram --reference-fasta-file hg19.fa --output-bam-file 1674046.bam
